@@ -24,3 +24,4 @@
 
 // Enable USB flash drive
 #define MICROPY_HW_USB_MSC 1
+#define MICROPY_BANNER_NAME_AND_VERSION "MicroPython 1.21.0 with Anvil Uplink 0.2.0"

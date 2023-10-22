@@ -174,6 +174,12 @@ int main(int argc, char **argv) {
         pyexec_frozen_module("_boot.py", false);
         #endif
 
+        // pimoroni-pico provides a module called "boot.py", which gets frozen 
+        // and then prevents boot.py running from the filesystem. The anvil-pico
+        // configure script renames it to pimoroni_boot.py, which we then need to
+        // explicitly execute here.
+        pyexec_frozen_module("pimoroni_boot.py", false);
+
         // Execute user scripts.
         int ret = pyexec_file_if_exists("boot.py");
         if (ret & PYEXEC_FORCED_EXIT) {
