@@ -26,4 +26,4 @@ int mp_hal_is_pin_reserved(int n);
 
 // Enable USB flash drive
 #define MICROPY_HW_USB_MSC 1
-#define MICROPY_BANNER_NAME_AND_VERSION "MicroPython 1.25.0-preview (Pico W) with Anvil Uplink 0.2.0"
+#define MICROPY_BANNER_NAME_AND_VERSION "MicroPython 1.25.0-preview with Anvil Uplink 0.3.0"
